@@ -125,3 +125,101 @@ body {
   border-radius: 12px;
 }
 /* index style end */
+
+/* kv */
+.static-slider-container {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fafafa;
+  }
+  
+  .static-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 20px;
+  }
+  
+  .flow-slider {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .flow-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hide scrollbar */
+  .flow-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .flow-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+ .flow-track {
+  display: flex;
+  width: max-content;
+}
+  
+  .flow-slider:hover .flow-track {
+  animation-play-state: paused;
+}
+  
+ .flow-slide {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.image-item {
+  transition: transform 0.3s ease;
+}
+  
+  .flow-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .image-item {
+  border-radius: 12px;
+}
+  
+  /* Static right-side dress set image */
+  .static-set {
+    width: 400px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  .static-set img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .static-set p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  /* Flow animation */
+ /* @keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+   */
